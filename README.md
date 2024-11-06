@@ -12,36 +12,36 @@ This project shows you how to use Flask for web app development and Pandas for d
 2. **Clone Your Forked Repository**:
    - Copy the URL of your forked repository (it will look like `https://github.com/your-username/repo-name.git`).
    - In your terminal, run the following commands:
-      git clone 'your-forked-repo-url' and then navigate to your repo with cd 'your-repo-name'
+      - git clone 'your-forked-repo-url'
+      - cd 'your-repo-name'
 
 3. **Install Dependencies**
 **On macOS/Linux:**
-pip3 install -r requirements.txt
+- pip3 install -r requirements.txt
 **On Windows:**
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 4. **Add Pandas Code**
 # Importing Pandas
-import pandas as pd
+- import pandas as pd
 # Load the CSV file into a Pandas DataFrame
-df = pd.read_csv(file)
+- df = pd.read_csv(file)
 
 # Display the first few rows of the DataFrame as an HTML table
-full_table = df.to_html()
+- full_table = df.to_html()
 
 # Optionally, filter specific columns (e.g., select only 'Product' and 'Price')
-filtered_df = df[df['Price'] < 0.80][['Product', 'Price', 'Quantity']]
-filtered_table = filtered_df.to_html()
+- filtered_df = df[df['Price'] < 0.80][['Product', 'Price', 'Quantity']]
+- filtered_table = filtered_df.to_html()
 
 # Render the template and pass the tables for full and filtered data
-return render_template('index.html', tables=full_table
-filtered_tables=filtered_table)
+- return render_template('index.html', tables=full_table, filtered_tables=filtered_table)
 
 3. **Run the App**:
 **On macOS/Linux:**
-python3 app.py
+- python3 app.py
 **On Windows:**
-python app.py
+- python app.py
 
 4. **Open in Browser**:
 - Go to `http://127.0.0.1:5000` and upload a CSV file.
@@ -51,5 +51,5 @@ python app.py
 A sample CSV file (`samples.csv`) is included. This file contains data can be used to test the app.
 
 ### To Use the Sample File:
-1. Run the app by following the instructions above.
-2. Go to the web page and upload `samples.csv`.
+- Run the app by following the instructions above.
+- Go to the web page and upload `samples.csv`.
