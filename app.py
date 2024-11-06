@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import pandas as pd
+#import pandas
 
 app = Flask(__name__)
 
@@ -18,17 +18,16 @@ def upload_file():
 
     # add Pandas code below this line
     # 1. Load the CSV file into a Pandas DataFrame
-    df = pd.read_csv(file)
+    
 
     # 2. Display the first few rows of the DataFrame as an HTML table
-    full_table = df.to_html()
+    
 
     # 3. Optionally, filter specific columns (e.g., select only 'Product' and 'Price')
-    filtered_df = df[df['Price'] < 0.80][['Product', 'Price', 'Quantity']] 
-    filtered_table = filtered_df.to_html()
+    
 
     # Render the template and pass the tables for full and filtered data
-    return render_template('index.html', tables=full_table, filtered_tables=filtered_table)
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
