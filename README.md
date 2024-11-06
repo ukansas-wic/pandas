@@ -19,11 +19,11 @@ This project shows you how to use Flask for web app development and Pandas for d
    - A virtual environment keeps your project’s dependencies isolated from other projects.
    - Run the following commands to create and activate the virtual environment:
    **On macOS/Linux**:
-   python3 -m venv venv  # Creates a virtual environment in a folder named 'venv'
-   source venv/bin/activate  # Activates the virtual environment
+   - python3 -m venv venv  
+   - source venv/bin/activate  
    **On Windows**:
-   python -m venv venv  # Creates a virtual environment in a folder named 'venv'
-   venv\Scripts\activate  # Activates the virtual environment
+   - python -m venv venv  
+   - venv\Scripts\activate 
 
 4. **Install Dependencies**
 **On macOS/Linux:**
