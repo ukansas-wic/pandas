@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload CSV</title>
+</head>
+<body>
+    <h1>Upload a CSV File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if tables %}
+        <h2>Full CSV Data:</h2>
+        {{ tables|safe }}
+    {% endif %}
+
+    {% if filtered_tables %}
+        <h2>Filtered CSV Data:</h2>
+        {{ filtered_tables|safe }}
+    {% endif %}
+</body>
+</html>
