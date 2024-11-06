@@ -16,7 +16,6 @@ This project shows you how to use Flask for web app development and Pandas for d
       - cd 'your-repo-name'
 
 3. **Create and Activate a Virtual Environment**
-   - A virtual environment keeps your project’s dependencies isolated from other projects.
    **On macOS/Linux**:
    python3 -m venv venv  
    source venv/bin/activate  
