@@ -17,9 +17,9 @@ This project shows you how to use Flask for web app development and Pandas for d
 
 3. **Install Dependencies**
 **On macOS/Linux:**
-- pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 **On Windows:**
-- pip install -r requirements.txt
+pip install -r requirements.txt
 
 4. **Add Pandas Code**
 # Importing Pandas
@@ -39,9 +39,9 @@ This project shows you how to use Flask for web app development and Pandas for d
 
 3. **Run the App**:
 **On macOS/Linux:**
-- python3 app.py
+python3 app.py
 **On Windows:**
-- python app.py
+python app.py
 
 4. **Open in Browser**:
 - Go to `http://127.0.0.1:5000` and upload a CSV file.
