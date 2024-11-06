@@ -15,13 +15,23 @@ This project shows you how to use Flask for web app development and Pandas for d
       - git clone 'your-forked-repo-url'
       - cd 'your-repo-name'
 
-3. **Install Dependencies**
+3. **Create and Activate a Virtual Environment**
+   - A virtual environment keeps your project’s dependencies isolated from other projects.
+   - Run the following commands to create and activate the virtual environment:
+   **On macOS/Linux**:
+   python3 -m venv venv  # Creates a virtual environment in a folder named 'venv'
+   source venv/bin/activate  # Activates the virtual environment
+   **On Windows**:
+   python -m venv venv  # Creates a virtual environment in a folder named 'venv'
+   venv\Scripts\activate  # Activates the virtual environment
+
+4. **Install Dependencies**
 **On macOS/Linux:**
 pip3 install -r requirements.txt
 **On Windows:**
 pip install -r requirements.txt
 
-4. **Add Pandas Code**
+5. **Add Pandas Code on app.py**
 # Importing Pandas
 - import pandas as pd
 # Load the CSV file into a Pandas DataFrame
